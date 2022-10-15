@@ -7,7 +7,7 @@
   --c4: #0000002a;
   --c5: #936fd0;
   --c6: #3f3f3f;
-  --c7: #01061f;
+  --c7: #300e0d;
   --c8: #444444;
   --navbar-height: 84px;
 }
@@ -66,11 +66,30 @@ body {
   padding-left: 10rem;
   padding-right: 10rem;
   height: var(--navbar-height);
-  border-bottom: solid #ffffff85 1px;
+  border-bottom: solid #fff 2px !important;
+  color: #fff;
+}
+
+.nav1 {
+  border-bottom: solid var(--c2) 2px !important;
+  color: var(--c2) !important;
+}
+
+.navbar a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav2 {
+  border-bottom: solid var(--c3) 2px;
+}
+
+.navbar-link:link {
+  text-decoration: none;
 }
 
 .bg-c7 {
-  background: var(--c7);
+  background: var(--c2);
 }
 
 .navbar-links {
@@ -78,17 +97,12 @@ body {
   display: inline-flex;
   align-items: center;
   height: 84px;
-  color: var(--c3);
 }
 
 .navbar-link {
   margin-right: 2rem;
 }
 
-.navbar-link:link {
-  text-decoration: none;
-  color: var(--c3);
-}
 
 .footer {
   background: var(--c7);
@@ -120,9 +134,12 @@ body {
   margin-bottom: 0.8rem;
 }
 
-.footer a:link,
-a:visited {
-  color: var(--c3);
+.footer-grid span {
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: #fff;
   text-decoration: none;
 }
 
@@ -136,18 +153,26 @@ a:visited {
 }
 
 .section-home {
-  background: var(--c7);
+  background: #fff;
   height: calc(100vh - var(--navbar-height));
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 2px solid var(--c2);
+  width: 80%;
+  margin-left: 10%;
+}
+
+.section-home div {
+  font-size: 1.3rem;
+  color: var(--c2)
 }
 
 .heading-main {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
-  background: linear-gradient(60deg, var(--c1), var(--c2));
+  background: linear-gradient(60deg, #e34dc3 20%, var(--c1) 70%, #ffe089 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -168,7 +193,7 @@ a:visited {
 }
 
 .heading-section {
-  font-size: 2.75rem;
+  font-size: 4rem;
   text-align: center;
   color: var(--c1);
   margin-top: 0;
@@ -240,7 +265,7 @@ a:visited {
 }
 
 .heading-mission1 {
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -255,7 +280,7 @@ a:visited {
 }
 
 .heading-mission2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .para {
@@ -451,6 +476,17 @@ a:visited {
 @media (max-width: 1400px) {
   .section-mission2 {
     grid-template-columns: 1fr;
+    grid-template-rows: 2;
+  }
+
+  .heading-mission2 {
+    font-size: 2.5rem;
+    grid-row: 1;
+  }
+
+  .mission-img {
+    grid-row: 2;
+    margin-top: 3rem;
   }
 
   .section-impact {
