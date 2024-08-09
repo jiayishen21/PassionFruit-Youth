@@ -179,6 +179,19 @@ body {
   -webkit-background-clip: text;
 }
 
+.heading-sponsor {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--c3);
+  margin-top: -2rem;
+}
+
+.heading-sponsor2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--c6);
+}
+
 .c3 {
   color: var(--c3);
 }
@@ -288,6 +301,24 @@ body {
 .para {
   font-size: 1.075rem;
   line-height: 1.8rem;
+}
+
+.heading-sponsor1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.section-sponsor1 {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.section-sponsor2 {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: white;
+  grid-template-columns: 6fr 5fr;
 }
 
 .section-impact {
@@ -491,6 +522,16 @@ body {
     margin-top: 3rem;
   }
 
+  .section-sponsor1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+  }
+
+  .sponsor-img {
+    grid-row: 2;
+    margin-top: 3rem;
+  }
+
   .section-impact {
     grid-template-columns: 1fr 1fr;
   }
@@ -536,10 +577,13 @@ body {
     padding-right: 3.5rem;
   }
 
-  .section-mission2 {
-    padding-right: 0;
-    padding-left: 15%;
-  }
+  .sponsor-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
 
   .section-impact {
     grid-template-columns: 1fr;
